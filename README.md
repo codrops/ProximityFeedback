@@ -2,7 +2,7 @@
 
 Some ideas for proximity feedback through progressive hover effects.
 
-![Proximity Feedback Ideas](https://tympanus.net/codrops/wp-content/uploads/2018/05/ProximityFeedback_featured.jpg)
+![Proximity Feedback Ideas](https://tympanus.net/codrops/wp-content/uploads/2018/05/feedback77new.gif)
 
 [Article on Codrops](https://tympanus.net/codrops/?p=34754)
 
