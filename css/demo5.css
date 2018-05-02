@@ -100,7 +100,7 @@ input:-webkit-autofill {
 }
 
 .form__input:focus ~ .form__placeholder span {
-	opacity: 0 !important;
+	opacity: 0;
 }
 
 .form__button {
