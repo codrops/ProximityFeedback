@@ -1,0 +1,90 @@
+.demo-3 {
+	--color-text: #333;
+	--color-bg: #fff;
+	background-image: url(../img/4.jpg);
+	background-size: cover;
+	background-position: bottom center;
+	--color-link: #aaa;
+	--color-link-hover: #333;
+	--color-info: #333;
+}
+
+.content--fixed {
+	align-content: stretch;
+	grid-template-areas: 'header search'
+	'... ...'
+	'demos info';
+}
+
+.info {
+	align-self: end;
+}
+
+.search {
+	grid-area: search;
+	align-self: start;
+	justify-self: end;
+	pointer-events: auto;
+	display: flex;
+	position: relative;
+	margin: 0.15rem 0.25rem 0 0;
+}
+
+.search__input {
+	padding: 0.75rem 1rem;
+	background: none;
+	border: 0;
+	width: 160px;
+	background: #fff;
+	border-radius: 30px;
+	font-weight: bold;
+	opacity: 0;
+}
+
+.search__input:focus {
+	outline: none;
+	opacity: 1;
+}
+
+.search__input:focus ~ .search__feedback span {
+	opacity: 0;
+}
+
+.search__feedback {
+	position: absolute;
+	right: 3rem;
+	bottom: 0.85rem;
+	font-weight: bold;
+	display: flex;
+	pointer-events: none;
+}
+
+.search__feedback span {
+	flex: none;
+	white-space: pre;
+}
+
+.btn {
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	border: none;
+	background: none;
+	font-size: 1rem;
+	position: absolute;
+	z-index: 10;
+	right: 0.5rem;
+	top: 0.5rem;
+	color: #333;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+@media screen and (max-width: 55em) {
+	.search {
+		width: 192px;
+		margin: 1rem auto;
+	}
+}

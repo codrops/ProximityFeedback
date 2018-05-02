@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:700');
+/* Color schemes */
+.demo-2 {
+	--color-text: #e1e4e6;
+    --color-bg: #141315;
+    --color-link: #600fe0;
+    --color-link-hover: #e2e4e6;
+    --color-info: #e2e4e6;
+}
+
+.gallery {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 2rem 0;
+	overflow: hidden;
+}
+
+.gallery__item {
+	position: relative;
+	flex: none;
+	width: 30%;
+	height: calc(100vh - 16rem);
+	background-size: cover;
+}
+
+.gallery__item--current {
+	width: 50vw;
+	margin-left: -20vw;
+}
+
+.gallery__item--prev,
+.gallery__item--next {
+	opacity: 0.2;
+	cursor: pointer;
+}
+
+.gallery__item--prev {
+	transform: translate3d(-80%,0,0);
+}
+
+.gallery__item--next {
+	transform: translate3d(80%,0,0);
+}
+
+.gallery__item-img {
+	width: 100%;
+	height: 100%;
+}
+
+.gallery__item-content {
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 5rem;
+	right: -15vw;
+	text-align: right;
+	width: 100%;
+}
+
+.gallery__item-enter {
+	position: absolute;
+	bottom: 0.5rem;
+	right: 13vw;
+	font-size: 1.15rem;
+	cursor: pointer;
+}
+
+.gallery__item-title {
+	font-size: 5rem;
+	margin: 0;
+	font-family: 'Libre Baskerville', serif;
+}
+
+.gallery__item-description {
+	margin: 0 -3rem 0 0;
+	font-size: 1.5rem;
+}
+
+@media screen and (max-width: 55em) {
+	.gallery__item {
+		height: 100vw;
+	}
+	.gallery__item-title {
+		font-size: 2rem;
+	}
+	.gallery__item-description {
+		margin: 0;
+		font-size: 1rem;
+	}
+}

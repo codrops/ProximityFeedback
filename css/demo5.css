@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+
+.demo-5 {
+	--color-text: #5a5a5a;
+    --color-bg: #040404;
+    --color-link: #5a5a5a;
+    --color-link-hover: #e84613;
+    --color-info: #5a5a5a;
+    font-family: 'Space Mono', monospace;
+    text-transform: lowercase;
+}
+
+.content--fixed {
+	grid-template-areas: 'header ...'
+	'... ...'
+	'demos info';
+}
+
+.form {
+	width: 60%;
+	max-width: 450px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	padding: 4rem 0 0 0;
+}
+
+.form__title {
+	display: block;
+	color: #fefefe;
+	font-size: 1.3rem;
+	text-align: left;
+	font-weight: bold;
+	align-self: flex-start;
+	padding: 0 0 1.5rem;
+}
+
+.form__item {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 1.5rem 0;
+}
+
+.form__label {
+	display: block;
+	font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    overflow: hidden;
+    color: #234afc;
+}
+
+.form__label span {
+	opacity: 0;
+}
+
+.form__label span,
+.form__placeholder span {
+	flex: none;
+	white-space: pre;
+}
+
+.form__input {
+	display: block;
+	font-size: 1.25rem;
+	padding: 1.5rem;
+	width: 100%;
+	border: 0;
+	background: #131313;
+	position: relative;
+	font-weight: bold;
+	color: #fff;
+}
+
+.form__input:focus {
+	outline: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 10rem #131313 inset;
+    -webkit-text-fill-color: #fff !important;
+
+}
+
+.form__placeholder {
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+	font-size: 1.25rem;
+	pointer-events: none;
+	padding: 1.5rem;
+	display: flex;
+	overflow: hidden;
+	color: #234afc;
+	font-weight: bold;
+}
+
+.form__input:focus ~ .form__placeholder span {
+	opacity: 0 !important;
+}
+
+.form__button {
+	padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border: 0;
+    margin: 1.2rem 0 0 auto;
+    background: #234afc;
+    border-radius: 5px;
+    color: #FEFEFE;
+    align-self: center;
+}
+
+.form__button:focus {
+	outline: none;
+}
+
+.form__button:hover {
+	background: #1839d0;
+}
+
+@media screen and (max-width: 55em) {
+	.form {
+		max-width: none;
+		width: 80%;
+	}
+}
